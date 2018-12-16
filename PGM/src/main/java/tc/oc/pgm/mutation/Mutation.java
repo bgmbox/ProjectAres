@@ -19,6 +19,7 @@ import tc.oc.pgm.mutation.types.targetable.BomberMutation;
 import tc.oc.pgm.mutation.types.targetable.LightningMutation;
 import tc.oc.pgm.mutation.types.uhc.BloodDiamondsScenario;
 import tc.oc.pgm.mutation.types.uhc.ChickenScenario;
+import tc.oc.pgm.mutation.types.uhc.HasteScenario;
 import tc.oc.pgm.mutation.types.uhc.SharingScenario;
 import tc.oc.pgm.mutation.types.uhc.CutCleanScenario;
 import tc.oc.pgm.mutation.types.uhc.DelayedMobsScenario;
@@ -73,7 +74,8 @@ public enum Mutation {
     DELAYEDMOBS   (DelayedMobsScenario.class,   Material.WATCH, false, true),
     SHARING       (SharingScenario.class,       Material.STONE_HOE, false, true),
     WEAKESTLINK   (WeakestLinkScenario.class,   Material.WEB, false, true),
-    CHICKEN       (ChickenScenario.class,       Material.RAW_CHICKEN, false, true);
+    CHICKEN       (ChickenScenario.class,       Material.RAW_CHICKEN, false, true),
+    HASTE         (HasteScenario.class,         Material.DIAMOND_PICKAXE, false, true);
 
     public static final String TYPE_KEY = "mutation.type.";
     public static final String DESCRIPTION_KEY = ".desc";
