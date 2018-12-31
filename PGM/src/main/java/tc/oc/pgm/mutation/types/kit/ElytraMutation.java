@@ -76,7 +76,7 @@ public class ElytraMutation extends KitMutation {
 
         @Override
         public void run() {
-            if(match.isRunning() && !gliding.isEmpty() && !match.module(MutationMatchModule.class).get().enabled(Mutation.ELYTRA)) {
+            if(match.isRunning() && !gliding.isEmpty() && !match.module(MutationMatchModule.class).get().enabled("elytra")) {
                 Instant now = match().getInstantNow();
                 for(MatchPlayer player : ImmutableSet.copyOf(gliding)) {
                     if(!player.isSpawned() || !player.getBukkit().isGliding() || TimeUtils.isEqualOrBeforeNow(now, end)) {

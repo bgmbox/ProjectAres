@@ -171,4 +171,8 @@ public class MutationMatchModule extends MatchModule {
         return mutationsActive().stream().anyMatch(m1 -> Stream.of(mutations).anyMatch(m2 -> m2.equals(m1)));
     }
 
+    public boolean enabled(String... mutations) {
+        return mutationsActive().stream().anyMatch(m1 -> Stream.of(mutations).anyMatch(m2 -> m2.equalsIgnoreCase(m1.getName())));
+    }
+
 }
