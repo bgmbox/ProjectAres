@@ -8,15 +8,15 @@ import tc.oc.pgm.match.Match;
 import tc.oc.pgm.mutation.Mutation;
 import tc.oc.pgm.mutation.types.UHCMutation;
 
-public class BloodDiamondsScenario extends UHCMutation.Impl {
+public class BloodLapisScenario extends UHCMutation.Impl {
 
-    public BloodDiamondsScenario(Match match, Mutation mutation) {
+    public BloodLapisScenario(Match match, Mutation mutation) {
         super(match, mutation);
     }
 
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onItemSpawn(BlockBreakEvent event) {
-        if (event.getBlock().getType().equals(Material.DIAMOND_ORE)) {
+        if (event.getBlock().getType().equals(Material.LAPIS_ORE)) {
             damage(event.getPlayer(), event.getPlayer().getHealth() - 1);
         }
     }
