@@ -28,9 +28,9 @@ public class TokenPurchaseInterface extends ChestInterface {
 
         buttons.add(new Button(
                 new ItemCreator(Material.REDSTONE)
-                        .setName(Constants.PREFIX + "Devcoins")
+                        .setName(Constants.PREFIX + "DevCoins")
                         .addLore(Constants.SUBTEXT + "You have "
-                                + Integer.valueOf(numRaindrops) + " Devcoin" + (numRaindrops == 1 ? "" : "s" ))
+                                + Integer.valueOf(numRaindrops) + " DevCoin" + (numRaindrops == 1 ? "" : "s" ))
                 , 13));
 
         buttons.add(new Button(
@@ -65,7 +65,7 @@ public class TokenPurchaseInterface extends ChestInterface {
         return new Button(
                 new ItemCreator(Material.ELYTRA)
                         .setName(Constants.PREFIX + "Buy " + amount + " Mutation Tokens")
-                        .addLore(Constants.SUBTEXT + "Cost: " + cost + " Devcoins")
+                        .addLore(Constants.SUBTEXT + "Cost: " + cost + " DevCoins")
                         .setSize(amount), slot){
             @Override
             public void function(Player player) {
@@ -81,7 +81,7 @@ public class TokenPurchaseInterface extends ChestInterface {
         return new Button(
                 new ItemCreator(Material.ELYTRA)
                         .setName(Constants.PREFIX + "Buy " + amount + " SetNext Tokens")
-                        .addLore(Constants.SUBTEXT + "Cost: " + cost + " Devcoins")
+                        .addLore(Constants.SUBTEXT + "Cost: " + cost + " DevCoins")
                         .setSize(amount), slot){
             @Override
             public void function(Player player) {
