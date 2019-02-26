@@ -54,7 +54,6 @@ public class Utils {
 
     public static void resetPlayer(Player player) {
         player.getInventory().clear();
-        player.getInventory().setChestplate(new ItemBuilder().material(Material.ELYTRA).unbreakable(true).get());
         player.setGameMode(GameMode.ADVENTURE);
         player.setAllowFlight(player.hasPermission("lobby.fly"));
         player.setWalkSpeed(0.2f);
