@@ -79,7 +79,7 @@ public class NavigatorInterface implements PluginFacet, Listener, Commands {
     private boolean enabled;
     private int height;
     private BaseComponent title = new TranslatableComponent("navigator.title");
-    private ItemStack openButtonIcon = new ItemStack(Material.SIGN);
+    private ItemStack openButtonIcon = new ItemStack(Material.ENCHANTED_BOOK);
     private Slot.Player openButtonSlot = Slot.Hotbar.forPosition(0);
 
     private ImmutableMap<Slot.Container, Button> buttons = ImmutableMap.of();
@@ -231,7 +231,7 @@ public class NavigatorInterface implements PluginFacet, Listener, Commands {
                 enabled = config.getBoolean("enabled", false);
                 title = new TranslatableComponent(config.getString("title", "navigator.title"));
                 final ItemConfigurationParser itemParser = new ItemConfigurationParser(config);
-                openButtonIcon = itemParser.getItem(config, "icon", () -> new ItemStack(Material.SIGN));
+                openButtonIcon = itemParser.getItem(config, "icon", () -> new ItemStack(Material.ENCHANTED_BOOK));
 
                 if(enabled) {
                     final ConfigurationSection buttonSection = config.getSection("buttons");
