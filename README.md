@@ -77,7 +77,7 @@ Of particular interest are these:
 On any PGM or Lobby server, these external plugins can/must be loaded:
 
 * [bukkit-settings](https://github.com/OvercastNetwork/BukkitSettings) (required)
-* [Channels](https://github.com/OvercastNetwork/Channels) (required)
+* [Channels](https://github.com/OvercastNetwork/Channels) (optional) (currently breaks /g)
 * [raven-bukkit](https://github.com/OvercastNetwork/raven-minecraft) (optional)
 * [ChatModerator](https://github.com/OvercastNetwork/ChatModerator) (optional)
 
